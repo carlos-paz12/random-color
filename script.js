@@ -1,4 +1,5 @@
 const button = document.querySelector('button');
+const copyButton = document.querySelector('.copy-button');
 const body = document.querySelector('body');
 let p = document.querySelector('p');
 
@@ -12,4 +13,12 @@ button.onclick = function () {
     body.style.backgroundColor = randomColor;
 
     p.innerHTML = randomColor;
+};
+
+copyButton.onclick = function () {
+    const colorText = p.innerText;
+
+    navigator.clipboard.writeText(colorText).then(function () {
+        alert('Copied!');
+    });
 };
