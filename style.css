@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend');
+
+* {
+    font-family: 'Lexend', sans-serif;
+}
+
+button,
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    margin-top: 2em;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    padding: 0.2em 1em;
+    transition: 0.2s;
+}
+
+button:hover {
+    font-size: 1.2em;
+    transition: 0.2s;
+}
